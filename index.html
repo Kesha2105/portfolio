@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1c6dbae0c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Kesha-logos_white.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" far fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Web Devloper</p>
+                <h1>Hi, I'm <span>Kesha</span><br> Vaja From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="Snapchat-357962731.jpg" width="350px" height="375px">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>My self Kesha.I'm a Web Devloper. Currently I'm assistant finanace manager of Umeed Gandhinagar.
+                        I'm from Junagadh, Gujarat. My hobbies are to play guitar
+                        and to sketch.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>designing web sites</li>
+                            <li><span>Java Developer</span><br>making java projects</li>
+                            <li><span>DSA</span><br>DSA certified</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Fresher</li>
+                            <li>Currently working as Finanace Assiatant at Umeed Gandhingar.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>10<sup>th</sup>% - 94.17</li>
+                            <li>12<sup>th</sup>% - 94.00</li>
+                            <li>currently study at GEC Gandhinagar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------services---------- -->
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I'm a Web developer. I have done projects like making Kalculator , Analog clock, portfolio etc..</p>
+                <a href="#">learn more</a>
+            </div>
+
+            <div>
+                <i class=" fab fa-brands fa-java"></i>
+                <h2>Java Developer</h2>
+                <p>I have made an Music app using java.</p>
+                <a href="#">learn more</a>
+            </div>
+
+            <div>
+                <i class="fas fa-solid fa-database"></i>
+                <h2>DBMS</h2>
+                <p>I'm Qualified with SQL certificate.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+    <!-- -----------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png">
+                    <div class="layer">
+                        <h3>Kalculator</h3>
+                        <p>This is my web dev project. I made a kalculator which perform calculation.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.png">
+                    <div class="layer">
+                        <h3>Analog Clock</h3>
+                        <p>This is a web dev project which shows current time.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><a href="mailto:keshavaja000@gmail.com"><i
+                                class="fa-regular fa-envelope"></i>keshavaja000@gmail.com</a></p>
+                    <br>
+                    <p><a href="tel:9727062366"><i class="fa-solid fa-phone-volume"></i>9727062366</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright <i class="fa-regular fa-copyright"></i> <br>
+            <p>Made by Kesha <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
